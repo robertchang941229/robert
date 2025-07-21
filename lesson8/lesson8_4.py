@@ -33,11 +33,22 @@ def play_game():
         except Exception as e:
             print(e)
 
-play_count = 0
-while(True):
-    play_count += 1
-    play_game()
-    is_continue = input("您還要繼續嗎(y,n)?")
-    if is_continue == "n":
-        break
-print("遊戲結束")
+def main():
+    play_count = 0
+    while(True):
+        play_count += 1
+        play_game()
+        is_continue = input("您還要繼續嗎(y,n)?")
+        if is_continue == "n":
+            break
+    print(f"您共玩了{play_count}次")
+    print("遊戲結束")
+
+#main()
+
+if __name__ == "__main()__":
+    main()
+
+#index.py  主執行檔
+# xxxx.py  自訂module
+#資料夾(section 1)  自訂package
